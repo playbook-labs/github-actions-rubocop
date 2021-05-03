@@ -35,7 +35,21 @@ def create_check
   http.use_ssl = true
   path = "/repos/#{@owner}/#{@repo}/check-runs"
 
+  puts 'Here it is'
+  puts path
+  puts '~~'
+  puts body.to_json
+  puts '~~'
+  puts @headers
+  puts '~~'
+
   resp = http.post(path, body.to_json, @headers)
+
+  puts '~~'
+  puts resp.code
+  puts '~~'
+  puts resp.body
+  puts '~'
 
   raise resp.message if resp.code.to_i >= 300
 

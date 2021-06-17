@@ -2,8 +2,8 @@
 
 set -e
 
-gem install rubocop -v 1.13
-gem install rubocop-performance -v 1.11
-gem install rubocop-rails -v 2.9
+gem install rubocop
+gem install rubocop-performance
+gem install rubocop-rails
 
 ruby /action/lib/index.rb

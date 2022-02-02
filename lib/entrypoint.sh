@@ -7,5 +7,6 @@ gem install rubocop
 # gem install rubocop-performance
 gem install rails -v 5.2.6
 gem install rubocop-rails
+gem install rubocop-rspec
 
 ruby /action/lib/index.rb

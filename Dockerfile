@@ -1,4 +1,4 @@
-FROM ruby:3.0.3-alpine3.15
+FROM ruby:2.6.6-alpine
 
 ADD ./etc/apk/repositories /etc/apk/repositories
 

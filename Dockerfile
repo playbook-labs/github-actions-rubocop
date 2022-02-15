@@ -1,4 +1,7 @@
-FROM ruby:3.0.3-alpine
+FROM ruby:3.0.3-alpine3.15
+
+ADD ./etc/apk/repositories /etc/apk/repositories
+
 RUN apk add --no-cache --update build-base linux-headers git
 
 LABEL com.github.actions.name="Playbook Rubocop Code Checks"
